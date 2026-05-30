@@ -1,0 +1,19 @@
+// These users should work with the indicated 
+// username and password
+
+        "username": "mary_pickford",
+        "email": "pickford@gmail.com",
+        "zipcode": "12034"
+        "password": "1moviestar",
+
+        "username": "Humphrey Bogart",
+        "email": "bogart@movies.com",
+        "zipcode": "65210"
+        "password": "maltesebird",
+
+// This user is not in the DB - will error
+
+        "username": "Charlie.Chaplin",
+        "email": "chap@movies.com",
+        "zipcode": "22333"
+        "password": "thetramp",

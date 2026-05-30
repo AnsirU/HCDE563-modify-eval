@@ -1,0 +1,258 @@
+{
+    "rated": [
+        {
+            "title": "The Pink Panther",
+            "tmdb_id": 12096,
+            "matched": 1, 
+            "candidates": [
+                {
+                    "title": "",
+                    "tmdb_id": -1,
+                    "year": "",
+                    "release_date": "",
+                    "synopsis": "",
+                    "genre_ids": [],
+                    "genre": []
+                },
+                {
+                    "title": "The Pink Panther",
+                    "tmdb_id": 12096,
+                    "year": "2006",
+                    "release_date": "2006-02-10",
+                    "synopsis": "When the coach of the France soccer team is killed by a poisoned dart in the stadium in the end of a game, and his expensive and huge ring with the diamond Pink Panther disappears, the ambitious Chief Inspector Dreyfus assigns the worst police inspector Jacques Clouseau to the case.",
+                    "genre_ids": [
+                        35,
+                        9648,
+                        80,
+                        12,
+                        10751
+                    ],
+                    "genre": [
+                        "Comedy",
+                        "Mystery",
+                        "Crime",
+                        "Adventure",
+                        "Family"
+                    ]
+                },
+                {
+                    "title": "The Pink Panther",
+                    "tmdb_id": 936,
+                    "year": "1963",
+                    "release_date": "1963-12-18",
+                    "synopsis": "The trademark of The Phantom, a renowned jewel thief, is a glove left at the scene of the crime. Inspector Clouseau, an expert on The Phantom's exploits, feels sure that he knows where The Phantom will strike next and leaves Paris for the Tyrolean Alps, where the famous Lugashi jewel 'The Pink Panther' is going to be. However, he does not know who The Phantom really is, or for that matter who anyone else really is...",
+                    "genre_ids": [
+                        35,
+                        80
+                    ],
+                    "genre": [
+                        "Comedy",
+                        "Crime"
+                    ]
+                },
+                {
+                    "title": "The Pink Panther 2",
+                    "tmdb_id": 15159,
+                    "year": "2009",
+                    "release_date": "2009-02-06",
+                    "synopsis": "When legendary treasures from around the world are stolen, including the priceless Pink Panther Diamond, Chief Inspector Dreyfus is forced to assign Inspector Clouseau to a team of international detectives and experts charged with catching the thief and retrieving the stolen artifacts.",
+                    "genre_ids": [
+                        35,
+                        9648
+                    ],
+                    "genre": [
+                        "Comedy",
+                        "Mystery"
+                    ]
+                },
+                {
+                    "title": "The Pink Panther Strikes Again",
+                    "tmdb_id": 12268,
+                    "year": "1976",
+                    "release_date": "1976-12-15",
+                    "synopsis": "Charles Dreyfus, who has finally cracked over inspector Clouseau's antics, escapes from a mental institution and launches an elaborate plan to get rid of Clouseau once and for all.",
+                    "genre_ids": [
+                        35,
+                        80
+                    ],
+                    "genre": [
+                        "Comedy",
+                        "Crime"
+                    ]
+                },
+                {
+                    "title": "Son of the Pink Panther",
+                    "tmdb_id": 46828,
+                    "year": "1993",
+                    "release_date": "1993-08-27",
+                    "synopsis": "The illegitimate son of Inspector Clouseau is on the case of the kidnapped Princess Yasmin.",
+                    "genre_ids": [
+                        35,
+                        80
+                    ],
+                    "genre": [
+                        "Comedy",
+                        "Crime"
+                    ]
+                },
+                {
+                    "title": "Curse of the Pink Panther",
+                    "tmdb_id": 36576,
+                    "year": "1983",
+                    "release_date": "1983-08-12",
+                    "synopsis": "Inspector Clouseau disappears, and the Surete wants the world's second best detective to look for him. However, Clouseau's enemy, Dreyfus, rigs the Surete's computer to select, instead, the world's WORST detective, NYPD Sgt. Clifton Sleigh. Sleigh obtusely bungles his way past assassins and corrupt officials as though he were Clouseau's American cousin.",
+                    "genre_ids": [
+                        35,
+                        80,
+                        9648
+                    ],
+                    "genre": [
+                        "Comedy",
+                        "Crime",
+                        "Mystery"
+                    ]
+                }
+            ],
+            "score": -1,
+            "qna": [
+                {
+                    "question": "Tell me about a movie that is the funniest film you&#39;ve seen?",
+                    "answer": "The funniest film I&#39;ve seen is probably the original Pink Panther movie that starred Peter Sellers. It was hysterical. He plays a bumbling Inspector Clouseau and ends up in all of these crazy situations where you think he&#39;s going to get it wrong, but then, in the end, it turns out everything works out okay and he gets it right. The chief of police, Inspector Dreyfus, just can&#39;t believe that Clouseau is successful. He even tries to undermine Clouseau&#39;s investigation. In the end, the chief is driven insane by the way things work out for Clouseau. It&#39;s a hysterical film full of slapstick and interesting deadpan comedy."
+                },
+                {
+                    "question": "What are some of the elements that you enjoyed most about The Pink Panther, like specific scenes, types of humor or character interactions",
+                    "answer": "The movie has a number of really interesting slapstick scenes. That&#39;s one of the things that makes the Pink Panther so funny. But also, Peter Sellers does a really good job in his character acting as Clouseau. In his interactions with other characters, he has a wonderful deadpan delivery that makes the other actors and their characters sort of stop and think about what&#39;s going on. That deadpan, along with the slapstick, is one of the things that makes Clouseau work in the movie and work so well."
+                },
+                {
+                    "question": "Are there other movies in the franchise that you enjoy watching?",
+                    "answer": "Yes, there are several movies in the franchise that are actually quite good. As the Inspector Clouseau was developed over several films, the way in which the slapstick and the deadpan work together actually improved. While the first movie is probably the funniest in one sense, there are several other films that actually make the franchise strong overall. It is probably a hallmark of Peter Sellers&#39; movie work."
+                }
+            ],
+            "timestamp": "2025-02-20 17:28:53"
+        },
+        {
+            "title": "Groundhog Day",
+            "tmdb_id": 137,
+            "matched": 1, 
+            "candidates": [
+                {
+                    "title": "",
+                    "tmdb_id": -1,
+                    "year": "",
+                    "release_date": "",
+                    "synopsis": "",
+                    "genre_ids": [],
+                    "genre": []
+                },
+                {
+                    "title": "Groundhog Day",
+                    "tmdb_id": 137,
+                    "year": "1993",
+                    "release_date": "1993-02-11",
+                    "synopsis": "A narcissistic TV weatherman, along with his attractive-but-distant producer, and his mawkish cameraman, is sent to report on Groundhog Day in the small town of Punxsutawney, where he finds himself repeating the same day over and over.",
+                    "genre_ids": [
+                        10749,
+                        14,
+                        18,
+                        35
+                    ],
+                    "genre": [
+                        "Romance",
+                        "Fantasy",
+                        "Drama",
+                        "Comedy"
+                    ]
+                },
+                {
+                    "title": "Groundhog Daying",
+                    "tmdb_id": 476374,
+                    "year": "2017",
+                    "release_date": "2017-02-02",
+                    "synopsis": "Jack realizes Chris is Groundhog Daying.",
+                    "genre_ids": [
+                        35
+                    ],
+                    "genre": [
+                        "Comedy"
+                    ]
+                },
+                {
+                    "title": "Post-Groundhog Day",
+                    "tmdb_id": 610818,
+                    "year": "2019",
+                    "release_date": "2019-06-23",
+                    "synopsis": "This dark-comedy short film asks the question: what would life be like post-Groundhog Day?  While there\u2019s the temptation to get all pseudo-intellectual about it (POST-GROUNDHOG DAY is an exploration of post-traumatic stress disorder through a fantasy lens), truth be told, this is simply a story about two best friends bonding in the face of extra-ordinary circumstances.  It\u2019s weird and witty and warm",
+                    "genre_ids": [],
+                    "genre": []
+                },
+                {
+                    "title": "Groundhog Day Massacre",
+                    "tmdb_id": 852829,
+                    "year": "1986",
+                    "release_date": "1986-01-01",
+                    "synopsis": "Extremely rare SOV from Harold Olminsky.",
+                    "genre_ids": [],
+                    "genre": []
+                },
+                {
+                    "title": "Groundhog Day: The Weight of Time",
+                    "tmdb_id": 742206,
+                    "year": "2002",
+                    "release_date": "2002-01-29",
+                    "synopsis": "A look at the making of the classic Bill Murray comedy \"Groundhog Day.\"",
+                    "genre_ids": [
+                        99
+                    ],
+                    "genre": [
+                        "Documentary"
+                    ]
+                },
+                {
+                    "title": "Groundhog Day for a Black Man",
+                    "tmdb_id": 793174,
+                    "year": "2016",
+                    "release_date": "2016-12-05",
+                    "synopsis": "When a black man lives the same day over and over again, he tries changing his behavior to survive a police interaction.",
+                    "genre_ids": [
+                        35,
+                        18
+                    ],
+                    "genre": [
+                        "Comedy",
+                        "Drama"
+                    ]
+                }
+            ],
+            "score": -1,
+            "qna": [
+                {
+                    "question": "Tell me about a movie that you watch on special occasions?",
+                    "answer": "One of the movies that we watch on special occasions is Groundhog Day. It&#39;s a fascinating film that deals with how an individual played by Bill Murray comes to realize that his behaviors have big implications for his life. He gets stuck in this time where he lives the same day over and over again, Groundhog Day, and he tries to figure out how he can get out of that loop. Ultimately, he realizes that he can become a better person and works on improving himself. When he does become a better person, he gains the attention of his love interest, played by Andie MacDowell. Her reciprocation of love is what ultimately resolves the time loop. This is a movie full of interesting themes and is quite funny."
+                },
+                {
+                    "question": "What elements of Groundhog Day do you enjoy the most, and are there any specific themes, character arcs, or comedic styles that resonate with you?",
+                    "answer": "One of the things that&#39;s fascinating is the number of situations that the character played by Bill Murray is put into. In each of these situations, you can see how his character changes as he deals with the situation that is  bound to repeat every day. He&#39;s the only thing that can change each day, the people and the events around him stay the same. The viewer can see how his characters grows."
+                },
+                {
+                    "question": "Are there any other aspects to the movie that make Groundhog Day a special occasion movie?",
+                    "answer": "One of the things that makes Groundhog Day a special occasion movie is that it&#39;s also a love story. The love interest, played by Andie MacDowell, is not initially interested in the character played by Bill Murray, partly because she sees that character as selfish and completely full of himself. As Bill Murray&#39;s character grows in his many experiences of the same day, his love interest sees that he&#39;s not what she had initially thought and falls in love. This is what breaks the time loop."
+                }
+            ],
+            "timestamp": "2025-02-21 09:30:33"
+        }, 
+        {"title": "Raiders of the Lost Ark", 
+         "tmdb_id": 85, 
+         "matched": 1, 
+         "candidates": [{"title": "", "tmdb_id": -1, "year": "", "release_date": "", "synopsis": "", "genre_ids": [], "genre": []}, {"title": "Raiders of the Lost Ark", "tmdb_id": 85, "year": "1981", "release_date": "1981-06-12", "synopsis": "When Dr. Indiana Jones \u2013 the tweed-suited professor who just happens to be a celebrated archaeologist \u2013 is hired by the government to locate the legendary Ark of the Covenant, he finds himself up against the entire Nazi regime.", "genre_ids": [12, 28], "genre": ["Adventure", "Action"]}, {"title": "Raiders of the Lost Ark", "tmdb_id": 872080, "year": "2017", "release_date": "2017-05-28", "synopsis": "", "genre_ids": [], "genre": []}, {"title": "The Making of 'Raiders of the Lost Ark'", "tmdb_id": 362198, "year": "1981", "release_date": "1981-11-28", "synopsis": "One of the first 'Making of...' movies to become a hit in its own right.", "genre_ids": [99, 10770], "genre": ["Documentary", "TV Movie"]}, {"title": "Raiders of the Lost Ark: The Adaptation", "tmdb_id": 1147215, "year": "2003", "release_date": "2003-05-30", "synopsis": "A shot-for-shot remake of Indiana Jones and the Raiders of the Lost Ark (1981), started by three 12-year-olds and completed over a period of six years.", "genre_ids": [28, 12], "genre": ["Action", "Adventure"]}, {"title": "Great Movie Stunts: Raiders of the Lost Ark", "tmdb_id": 362197, "year": "1981", "release_date": "1981-10-05", "synopsis": "A documentary hosted by Harrison Ford about the stunts of 'Raiders of the Lost Ark.'", "genre_ids": [99], "genre": ["Documentary"]}], 
+         "score": 4.5, 
+         "qna": [{"question": "Tell me about a movie that is the best film in a series or franchise of films?", "answer": "One of the best films in a series is the Indiana Jones. The main character, Dr. Indiana Jones, is an archaeologist, and in each film he goes on an adventure, often with implications for the world. In one of the films, there&#39;s a famous scene where he outruns a very large boulder while escaping from an underground temple. In the film, a pair of U.S. Army intelligence officers come to see Dr. Jones and start asking him about an artifact that they think the Nazis are trying to find out in the Egyptian desert. Eventually, Dr. Jones ends up on this adventure through the Middle East. Melting faces ensue."}, {"question": "What are some specific elements or scenes you enjoyed in the Indiana Jones films that made them stand out to you, such as the setting, characters, action sequences, or something else?", "answer": "Well, across the franchise the settings for the films are really fascinating. The location scouts clearly did a great job finding all of the very interesting places that he goes. For the Raiders of the Lost Ark film, the desert scenes are really fascinating. As well, the interior scenes, the sound stages that they built, were also compelling and add a fair amount of excitement to the film. In this film, we learn that Dr. Jones is wildly afraid of snakes, and he ends up in a scene where he comes face to face with a cobra. There is also a drawn out car chase where Dr. Jones chases down the Ark of the Covenant. Only to lose it again."}, {"question": "In addition to the adventure and action elements in Indiana Jones films, what other genres or storytelling aspects do you enjoy in movies, such as humor, fantasy, or historical context?", "answer": "Well, this film, Raiders of the Lost Ark, is the best film in the franchise, because it&#39;s our introduction to Indiana Jones. It is the first film that was made about that character. But interestingly, it&#39;s not the first film, if you know the Indiana Jones timeline. That is, there are some later films that reflect adventures that he had a little bit earlier in his life. So this film defines the character and helps us understand some of the quirks of this character while presenting an overall exciting movie-going experience."}], 
+         "timestamp": "2025-02-26 13:54:14"},
+        {"title": "Cars", 
+         "tmdb_id": 920, 
+         "matched": 1, 
+         "candidates": [{"title": "", "tmdb_id": "", "year": "", "release_date": "", "synopsis": "", "genre_ids": [], "genre": []}, {"title": "Cars", "tmdb_id": 920, "year": "2006", "release_date": "2006-06-08", "synopsis": "Lightning McQueen, a hotshot rookie race car driven to succeed, discovers that life is about the journey, not the finish line, when he finds himself unexpectedly detoured in the sleepy Route 66 town of Radiator Springs. On route across the country to the big Piston Cup Championship in California to compete against two seasoned pros, McQueen gets to know the town's offbeat characters.", "genre_ids": [16, 12, 35, 10751], "genre": ["Animation", "Adventure", "Comedy", "Family"]}, {"title": "Cars", "tmdb_id": 811913, "year": "1979", "release_date": "1979-01-01", "synopsis": "\u201cI don\u2019t drive, but I know people who\u2019ll drive 100 metres to go to the shops. Our society is obsessed with the car, with coming and going, getting somewhere. I used very intricate matting, some shaped like knives. I wanted the cars to slice each other in two, creating a kind of hurdy gurdy atmosphere\u2026an abstract rushing to and fro, going nowhere. The first half of the film is silent. The second half, a grainy dupe of the same images, has sound and is far more urgent and aggressive.\u201d (Paul Winkler)", "genre_ids": [], "genre": []}, {"title": "Cars 2", "tmdb_id": 49013, "year": "2011", "release_date": "2011-06-11", "synopsis": "Star race car Lightning McQueen and his pal Mater head overseas to compete in the World Grand Prix race. But the road to the championship becomes rocky as Mater gets caught up in an intriguing adventure of his own: international espionage.", "genre_ids": [16, 10751, 12, 35], "genre": ["Animation", "Family", "Adventure", "Comedy"]}, {"title": "Cars 3", "tmdb_id": 260514, "year": "2017", "release_date": "2017-06-15", "synopsis": "Blindsided by a new generation of blazing-fast racers, the legendary Lightning McQueen is suddenly pushed out of the sport he loves. To get back in the game, he will need the help of an eager young race technician with her own plan to win, inspiration from the late Fabulous Hudson Hornet, and a few unexpected turns. Proving that #95 isn't through yet will test the heart of a champion on Piston Cup Racing\u2019s biggest stage!", "genre_ids": [10751, 16, 12, 35], "genre": ["Family", "Animation", "Adventure", "Comedy"]}, {"title": "Two Cars, One Night", "tmdb_id": 51896, "year": "2004", "release_date": "2004-06-09", "synopsis": "Sometimes first love is found in the most unlikely of places, like in the carpark outside the Te Kaha pub.", "genre_ids": [18, 35], "genre": ["Drama", "Comedy"]}, {"title": "Carter", "tmdb_id": 800345, "year": "2022", "release_date": "2022-08-05", "synopsis": "Carter, who awakens two months into a deadly pandemic originating from the DMZ that has already devastated US and North Korea. He who has no recollections of his past finds a mysterious device in his head, and a lethal bomb in his mouth. A voice in his ears gives him orders to avoid getting killed and he's thrown into a mysterious operation while the CIA and North Korean coup chase him close.", "genre_ids": [28, 53, 80], "genre": ["Action", "Thriller", "Crime"]}, {"title": "Gifted Hands: The Ben Carson Story", "tmdb_id": 22683, "year": "2009", "release_date": "2009-02-07", "synopsis": "Gifted Hands: The Ben Carson Story is a movie based on the life story of world-renowned neurosurgeon Ben Carson from 1961 to 1987.", "genre_ids": [18], "genre": ["Drama"]}], 
+         "score": 4.5, 
+         "qna": [{"question": "Tell me about a movie that you like?", "answer": "I like the movie Cars. It's a great little film in which the main character, Lightning McQueen, gets stuck in the town of Radiator Springs. While he's stuck in town, he interacts with a number of the townsfolk and gets to know them and makes friends and learns that friends are important to have. At the end of the movie, Lightning McQueen is involved in a car race and, with the help of his friends, he's able to win the race. He learns a little bit about how important it is to have friends. This is a great movie. Many people should see it."}, {"question": "What aspects of Lightning McQueen's journey in Cars do you find most engaging or enjoyable, and are there other themes or elements in movies that you find similarly compelling?", "answer": "I like that in the storyline, Lightning McQueen is put in a situation where he has to overcome aspects of himself. That is, he's challenged to become a better person. In the story, Lightning is charged with ruining the town's road and must fix the road. But as he fixes the road and the townsfolk begin to trust him a little bit more, he adventures out and around the town with friends, in particular a tow truck called Tow Mater, and learns that these friends are really important to him."}],
+         "timestamp": "2025-03-09 17:25:54"}
+    ]
+}

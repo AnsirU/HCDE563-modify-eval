@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <!-- set up a couple styles for the headline -->
+    <style>
+        rebert-h {
+            font-family: "Fredericka the Great", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 96px;
+        }
+        rebert-p {
+            font-family: "Fredericka the Great", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
+        }
+    </style>
+    <title>Rebert: LLM Movie Recommender</title>
+</head>
+
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+
+
+<!-- HEADLINE Section -->
+<div class="container-fluid border-0 bg-light">
+  <div class="row" style="height:200px">
+    <div class="col-md-2">
+      <a href="/">
+      <img src="/static/rebert_logo.png" alt="Rebert Logo" width="200" height="200"></a>
+    </div>
+    <div class="col-md-10">
+      <rebert-h>Rebert</rebert-h>
+      <p><rebert-p>Your Favorite Movie Recommender</rebert-p></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- NAVBAR - buttons or menues -->
+<div class="row bg-light">
+  <div class="col-md-2 border-0">
+  </div>
+  <div class="col-md-2 d-grid border-0">
+    <button type="button" class="btn btn-outline-secondary btn-block" >About</button>
+  </div>
+{% if session.session_id %}
+  <div class="col-md-2 d-grid border-0">
+    <a href="/rate_movies?session_id={{session.session_id}}" type="button" class="btn btn-outline-secondary btn-block" >Rate Movies</a>
+  </div>
+  <div class="col-md-2 d-grid border-0">
+    <a href="/create_account?session_id={{session.session_id}}" type="button" class="btn btn-outline-secondary btn-block" >Sign-up</a>
+  </div>
+  <div class="col-md-2 d-grid border-0">
+    <a href="/signin_page?session_id={{session.session_id}}" type="button" class="btn btn-outline-secondary btn-block" >Sign-in</a>
+  </div>
+{% else %}
+  <div class="col-md-2 d-grid border-0">
+    <a href="/rate_movies" type="button" class="btn btn-outline-secondary btn-block" >Rate Movies</a>
+  </div>
+  <div class="col-md-2 d-grid border-0">
+    <a href="/create_account" type="button" class="btn btn-outline-secondary btn-block" >Sign-up</a>
+  </div>
+  <div class="col-md-2 d-grid border-0">
+    <a href="/signin_page" type="button" class="btn btn-outline-secondary btn-block" >Sign-in</a>
+  </div>
+{% endif %}
+  <div class="col-md-2 border-0">
+  </div>
+</div>
+
+
+<!-- SPACER -->
+<div class="container-fluid bg-light">
+  <div class="row bg-light" style="min-height:10px">
+    <div class="col-md-12 border-0" ><p>&nbsp;</p></div>
+  </div>
+</div>
+
+
+<!-- Big empty area -->
+<div id="splash-area" class="container-fluid bg-light">
+<div class="row border-0 bg-light"> <!-- start:row_1 -->
+  <div class="col-md-3 border-0" id="column_1-3"><p>&nbsp;</p></div>
+  <div class="col-md-6 border-0" id="column_4-9">
+    <div class="container-fluid bg-light">
+      <div class="row bg-light" style="min-height:100px">
+        <div class="col-md-12 border-0" ><p>&nbsp;</p></div>
+      </div>
+      
+      <div class="row bg-light">
+        <div class="col-md-12 border-0" ><h1>Restricted to Rebert Users</h1></div>
+      </div>
+      
+      <div class="row bg-light" style="min-height:100px">
+        <div class="col-md-12 border-0" ><p>&nbsp;</p></div>
+      </div>
+
+      <div class="row bg-light"">
+        <div class="col-md-12 border-0" ><h3>The page or resource that you were trying to access requires a Rebert user account. You can 'Sign-in' with your existing account or 'Sign-up' to create a new account.</h3></div>
+      </div>
+      
+      <div class="row bg-light" style="min-height:100px">
+        <div class="col-md-12 border-0" ><p>&nbsp;</p></div>
+      </div>        
+
+      <div class="row bg-light">
+        <div class="col-md-12 border-0" ><p>&nbsp;</p></div>
+      </div>
+      
+      <div class="row bg-light" style="min-height:100px">
+        <div class="col-md-12 border-0" ><p>&nbsp;</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 border-0" id="column_10-12"><p>&nbsp;</p></div>
+</div> <!-- end:row_1 -->
+</div> <!-- end:LOGIN AREA -->
+
+</form>
+
+<!-- SPACER -->
+<div class="container-fluid bg-light">
+  <div class="row bg-light" style="min-height:10px">
+    <div class="col-md-12 border-0" ><p>&nbsp;</p></div>
+  </div>
+</div>
+
+</body>
+</html>

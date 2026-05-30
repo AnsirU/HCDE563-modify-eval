@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <!-- set up a couple styles for the headline -->
+    <style>
+        rebert-h {
+            font-family: "Fredericka the Great", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 96px;
+        }
+        rebert-p {
+            font-family: "Fredericka the Great", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
+        }
+    </style>
+    <title>Rebert: LLM Movie Recommender</title>
+</head>
+
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+<script src="/static/rebert_mainpage_ui.js"></script>
+<script>
+    $(document).ready(function() {
+        hideAllDiscussFlags();
+        setPosterSynopsisHover();
+        hideAllSynopsis();
+    });
+</script>
+
+
+
+<!-- Interaction state variables -->
+<input type="hidden" id="synopsis_state" value="0" />
+<input type="hidden" id="discuss_state" value="0" />
+<input type="hidden" id="user_session" value="0" />
+
+
+<!-- HEADLINE Section -->
+<div class="container-fluid border-0 bg-light">
+  <div class="row" style="height:200px">
+    <div class="col-md-2">
+      <a href="/">
+      <img src="/static/rebert_logo.png" alt="Rebert Logo" width="200" height="200"></a>
+    </div>
+    <div class="col-md-10">
+      <rebert-h>Rebert</rebert-h>
+      <p><rebert-p>Your Favorite Movie Recommender</rebert-p></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- NAVBAR - buttons or menues -->
+<div class="row bg-light">
+  <div class="col-md-2 border-0">
+  </div>
+  <div class="col-md-2 d-grid border-0">
+    <button type="button" class="btn btn-outline-secondary btn-block" >About</button>
+  </div>
+  <div class="col-md-2 d-grid border-0">
+    <button type="button" class="btn btn-outline-secondary btn-block" >Recent</button>
+  </div>
+  <div class="col-md-2 d-grid border-0">
+    <button type="button" class="btn btn-outline-secondary btn-block" >Settings</button>
+  </div>
+  <div class="col-md-2 d-grid border-0">
+    <button type="button" class="btn btn-outline-secondary btn-block" >Login</button>
+  </div>
+  <div class="col-md-2 border-0">
+  </div>
+</div>
+
+
+<!-- SPACER -->
+<div class="container-fluid bg-light">
+  <div class="row bg-light" style="min-height:10px">
+    <div class="col-md-12 border-0" ><p>&nbsp;</p></div>
+  </div>
+</div>
+
+
+<!-- PAGE BODY - Poster Section -->
+<div class="row border-0 bg-light">
+
+  <!-- COLUMN 1 -->
+  <div class="col-md-2 border-0" id="column_1">
+    <!-- column container -->
+    <div class="container h-100" >  
+      <!-- movie toast -->
+      <div class="toast z-2 position-absolute" id="synopsis_1">
+        <div class="toast-header">
+          <strong class="me-auto">Synopsis: The Red Lights of Giverney</strong>
+          <button type="button" class="btn-close" onclick="hideSynopsisToast(1);"></button>
+        </div>
+        <div class="toast-body">
+          <p>A tortured artist is painting the women of Giverney and killing them. Can he be caught in time?</p>
+        </div>
+      </div>
+      <!-- movie poster card -->
+      <div class="card h-100">
+        <div class="container-fluid">
+          <img class="card-img-top" src="static/posters/red_lights_giverny-poster.png" alt="poster" id="poster_1">
+        </div>
+        <div class="card-body">
+          <h4 class="card-title" >The Red Lights of Giverney</h4>
+          <p class="card-text">Coming Soon</p>
+          <button class="btn btn-light" onclick="showDiscussFlag(1);">Ask Rebert</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- COLUMN 2 -->
+  <div class="col-md-2 border-0" id="column_2">
+    <!-- column container -->
+    <div class="container h-100" >  
+      <!-- movie toast -->
+      <div class="toast z-2 position-absolute" id="synopsis_2">
+        <div class="toast-header">
+          <strong class="me-auto">Synopsis: Fast and Wet: IX</strong>
+          <button type="button" class="btn-close" onclick="hideSynopsisToast(2);"></button>
+        </div>
+        <div class="toast-body">
+          <p>An evil bait shop owner has taken Jackson, can his brother save him in time?</p>
+        </div>
+      </div>
+      <!-- movie poster card -->
+      <div class="card h-100" >
+        <div class="container-fluid" >
+          <img class="card-img-top" src="static/posters/fast_and_wet-poster.png" alt="poster" id="poster_2">
+        </div>
+        <div class="card-body">
+          <h4 class="card-title" >Fast and Wet: IX</h4>
+          <p class="card-text">Coming Soon</p>
+          <button class="btn btn-light" onclick="showDiscussFlag(2);">Ask Rebert</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COLUMN 3 -->
+  <div class="col-md-2 border-0" id="column_3">
+    <!-- column container -->
+    <div class="container h-100" >  
+      <!-- movie toast -->
+      <div class="toast z-2 position-absolute" id="synopsis_3">
+        <div class="toast-header">
+          <strong class="me-auto">Synopsis: Diaper Diaper, NOW!</strong>
+          <button type="button" class="btn-close" onclick="hideSynopsisToast(3);"></button>
+        </div>
+        <div class="toast-body">
+          <p>Are the parents baby crazy? The Smiths have a new baby and it is controlling their thoughts. Hillarious hijinks and family fun!</p>
+        </div>
+      </div>
+      <!-- movie poster card -->
+      <div class="card h-100">
+        <div class="container-fluid" >
+          <img class="card-img-top" src="static/posters/diaper_diaper-poster.png" alt="poster" id="poster_3">
+        </div>
+        <div class="card-body">
+          <h4 class="card-title" >Diaper Diaper, NOW!</h4>
+          <p class="card-text">Coming Soon</p>
+          <button class="btn btn-light" onclick="showDiscussFlag(3);">Ask Rebert</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- COLUMN 4 -->
+  <div class="col-md-2 border-0" id="column_4">
+    <!-- column container -->
+    <div class="container h-100" >  
+      <!-- movie toast -->
+      <div class="toast z-2 position-absolute" id="synopsis_4">
+        <div class="toast-header">
+          <strong class="me-auto">Synopsis: Maety Must Love</strong>
+          <button type="button" class="btn-close" onclick="hideSynopsisToast(4);"></button>
+        </div>
+        <div class="toast-body">
+          <p>All they wanted was to vacation on an authentic pirate schooner. An actual pirate hijacking wasn't in their plans. Now, marooned on a carribean island, will they find the treasure or will they find love?</p>
+        </div>
+      </div>
+      <!-- movie poster card -->
+      <div class="card h-100">
+          <div class="container-fluid">
+          <img class="card-img-top" src="static/posters/maety_must_love-poster.png" alt="poster" id="poster_4">
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Maety Must Love</h4>
+          <p class="card-text">Coming Soon</p>
+          <button class="btn btn-light" onclick="showDiscussFlag(4);">Ask Rebert</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COLUMN 5 -->
+  <div class="col-md-2 border-0" id="column_5">
+    <!-- column container -->
+    <div class="container h-100" >  
+      <!-- movie toast -->
+      <div class="toast z-2 position-absolute" id="synopsis_5">
+        <div class="toast-header">
+          <strong class="me-auto">Synopsis: Banana Slugs of Santa Cruz</strong>
+          <button type="button" class="btn-close" onclick="hideSynopsisToast(5);"></button>
+        </div>
+        <div class="toast-body">
+          <p>In the glorious redwoods of the California coast, one of the slowest moving animals has a more wild social life than you might imagine. Learn about an under appreciated mollusk that doesn't have a shell.</p>
+        </div>
+      </div>
+      <!-- movie poster card -->
+      <div class="card h-100">
+        <div class="container-fluid">
+          <img class="card-img-top" src="static/posters/banana_slugs-poster.png" alt="poster" id="poster_5">
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Banana Slugs of Santa Cruz</h4>
+          <p class="card-text">Coming Soon</p>
+          <button class="btn btn-light" onclick="showDiscussFlag(5);">Ask Rebert</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COLUMN 6 -->
+  <div class="col-md-2 border-0" id="column_6">
+    <!-- column container -->
+    <div class="container h-100" >  
+      <!-- movie toast -->
+      <div class="toast z-2 position-absolute" id="synopsis_6">
+        <div class="toast-header">
+          <strong class="me-auto">Synopsis: Seven Shots at Dawn</strong>
+          <button type="button" class="btn-close" onclick="hideSynopsisToast(6);"></button>
+        </div>
+        <div class="toast-body">
+          <p>A lone gun slinger comes to town with his special 'seven shooter' revolver. He faces off with the outlaws who monopolize the saloon. After winning a shootout, the town rejoices at the success of the gun slinger because everyone can now drink in safety.</p>
+        </div>
+      </div>
+      <!-- movie poster card -->
+      <div class="card h-100">
+      <div class="container-fluid">
+        <img class="card-img-top" src="static/posters/seven_shots-poster.png" alt="poster" id="poster_6">
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Seven Shots at Dawn</h4>
+        <p class="card-text">Coming Soon</p>
+        <button class="btn btn-light" onclick="showDiscussFlag(6);">Ask Rebert</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- PAGE BODY - discussion indicator to movie -->
+<div class="row bg-light">
+  <div class="col-md-2 border-0" >
+    <div id="discuss_slot_1">
+    <img class="mx-auto d-block" src="static/indicators/discussing_pointer_small.png" alt="pointer" ></div>
+  </div>
+  <div class="col-md-2 border-0" >
+    <div id="discuss_slot_2">
+    <img class="mx-auto d-block" src="static/indicators/discussing_pointer_small.png" alt="pointer" "></div>
+  </div>
+  <div class="col-md-2 border-0" >
+    <div id="discuss_slot_3">
+    <img class="mx-auto d-block" src="static/indicators/discussing_pointer_small.png" alt="pointer" ></div>
+  </div>
+  <div class="col-md-2 border-0" >
+    <div id="discuss_slot_4">
+    <img class="mx-auto d-block" src="static/indicators/discussing_pointer_small.png" alt="pointer" ></div>
+  </div>
+  <div class="col-md-2 border-0" >
+    <div id="discuss_slot_5">
+    <img class="mx-auto d-block" src="static/indicators/discussing_pointer_small.png" alt="pointer" "></div>
+  </div>
+  <div class="col-md-2 border-0" >
+    <div id="discuss_slot_6">
+    <img class="mx-auto d-block" src="static/indicators/discussing_pointer_small.png" alt="pointer" ></div>
+  </div>
+</div>
+
+
+<!-- PAGE BODY - Chat Section -->
+<div id="converse" class="collapse bg-light">
+    <form method="post" name="rebert_form" id="rebert_form" accept-charset="utf-8">
+    <div class="container mt-0">
+      
+      <div class="mb-3 mt-0">
+        <label for="rebert_says">Rebert says:</label>
+        <textarea class="form-control" rows="5" id="ask_output" name="ask_output"></textarea>
+      </div>
+      
+      <div class="mb-3 mt-3">
+        <label for="ask_rebert">Ask:</label>
+        <textarea class="form-control" rows="1" id="ask_input" name="question_text"></textarea>
+      </div>
+        <button type="submit" class="btn btn-primary" formaction="/">Ask Rebert</button>
+    </div>
+    </form>
+</div>
+
+<!-- FOOTER Section -->
+<div class="container-fluid border-0 bg-light">
+  <div class="row bg-light">
+    <div class="col-md-3"><p id='t1'>&nbsp;</p></div>
+    <div class="col-md-3"><p id='t2'>&nbsp;</p></div>
+    <div class="col-md-3"><p id='t3'>&nbsp;</p></div>
+  </div>
+</div>
+
+</body>
+</html>

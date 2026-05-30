@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+
+# Rebert runtime / session data (do not commit)
+rebert/_prototype_*/web/tmp/
+rebert/**/web/data/rebert_users/
+rebert/**/web/data/rebert_user_ratings/
+rebert/**/web/data/rebert_sessions/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.zip
+
+# Local logs / assignment artifacts at repo root
+SRant_collection_logging.txt
+explore*.zip
+
+# API keys (KeyManager stores keys outside repo by default; ignore local copies)
+**/keys/
+**/*_key.json
