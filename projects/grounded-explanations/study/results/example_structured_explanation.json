@@ -1,0 +1,29 @@
+{
+  "movie_title": "Remarkably Bright Creatures",
+  "rebert_rating": "HIGHLY MATCHED",
+  "rebert_explanation": {
+    "user_alignment": [
+      {
+        "q_index": 1,
+        "text": "You wanted a low-effort Sunday watch that still feels emotionally satisfying."
+      },
+      {
+        "q_index": 2,
+        "text": "You said you prefer warm character stories over fast action."
+      }
+    ],
+    "review_basis": [
+      {
+        "excerpt_id": "R1",
+        "text": "Reviews highlight gentle pacing and strong performances."
+      },
+      {
+        "excerpt_id": null,
+        "text": "Critics note an uplifting tone rather than heavy spectacle."
+      }
+    ],
+    "confidence": "high",
+    "confidence_detail": "clear overlap between your answers and review themes"
+  },
+  "notes": "Example parsed output from explanations.py — shown in the Why this title panel after Recommend."
+}

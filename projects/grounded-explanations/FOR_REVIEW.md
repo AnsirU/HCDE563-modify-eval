@@ -11,6 +11,8 @@
 | [`study/questionnaire.md`](study/questionnaire.md) | Likert + debrief |
 | [`study/scenarios.md`](study/scenarios.md) | Task scenarios |
 | [`study/results/TEMPLATE_participant_scores.md`](study/results/TEMPLATE_participant_scores.md) | Scoresheet template |
+| [`study/results/example_structured_explanation.json`](study/results/example_structured_explanation.json) | Sample explanation output |
+| [`docs/DELIVERY_CHECKLIST.md`](docs/DELIVERY_CHECKLIST.md) | Setup steps + completeness checklist |
 
 ## Run
 
