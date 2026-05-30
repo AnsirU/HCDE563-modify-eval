@@ -28,8 +28,8 @@ Use this before grading or demoing the project.
 ## Quick demo path (~5 min)
 
 ```bash
-git clone https://github.com/AnsirU/hcde563-rebert-explanations.git
-cd hcde563-rebert-explanations
+git clone https://github.com/AnsirU/HCDE563-modify-eval.git
+cd HCDE563-modify-eval
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 export PYTHONPATH=.

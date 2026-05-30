@@ -1,4 +1,4 @@
-# HCDE 563 — Rebert Course Repository
+# HCDE563 — Modify & Eval
 
 Full **Rebert** prototype codebase (runnable) plus the HCDE 563 course sub-project on grounded recommendation explanations.
 
@@ -71,7 +71,7 @@ Instructors: start at [`projects/grounded-explanations/FOR_REVIEW.md`](projects/
 
 ## GitHub
 
-https://github.com/AnsirU/hcde563-rebert-explanations
+https://github.com/AnsirU/HCDE563-modify-eval
 
 ## Attribution
 
