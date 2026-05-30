@@ -12,7 +12,7 @@ Environment variable read in `rebert/_prototype_7_1_/web/config.py`:
 | `modified` | Structured explanations + “Why this title” panel (default) |
 | `modified_full` | Modified + Level 3 review excerpt IDs in LLM prompt |
 
-Run scripts: `scripts/run_baseline.sh` (port 5000), `scripts/run_modified.sh` (port 5001).
+Run scripts: `projects/grounded-explanations/scripts/run_baseline.sh` (port 5000), `run_modified.sh` (port 5001).
 
 ## Level 1 — Prompt pipeline
 

@@ -1,143 +1,79 @@
-# Grounded Explanations for Rebert (HCDE 563)
+# HCDE 563 — Rebert Course Repository
 
-Course project extending **Rebert Prototype 7.1** with structured, user-linked recommendation explanations for a within-subjects evaluation of transparency, trust, and control.
+Full **Rebert** prototype codebase (runnable) plus the HCDE 563 course sub-project on grounded recommendation explanations.
 
-**Author:** Zhian Hu  
-**Course:** HCDE 563  
-**Base prototype:** Rebert p7.1
+**Author:** Zhian Hu · **Course:** HCDE 563
 
-## What changed
-
-| Level | Description | Key files |
-|-------|-------------|-----------|
-| **Level 1** | LLM outputs structured explanation tags (`USER_ALIGNMENT`, `REVIEW_BASIS`, `CONFIDENCE`) alongside match/rationale | `web/prompts.py`, `web/llm.py`, `web/explanations.py` |
-| **Level 2** | Compact **Why this title** panel with bullets; click a user-alignment bullet to highlight the linked Q&A answer | `web/templates/mainpage.html`, `web/static/rebert_mainpage_ui.js` |
-| **Level 3 (optional)** | Trimmed review excerpts with IDs (`R1`, `R2`, …) passed into the LLM | `web/explanations.py`, env `REBERT_EXPLANATION_MODE=modified_full` |
-
-Baseline (original p7.1 recommendation UI) and modified versions run from the **same codebase** via an environment variable — suitable for counterbalanced A/B sessions.
-
-## Repository layout
+## Repository structure
 
 ```
 HCDE563/
-├── FOR_REVIEW.md                      # start here (instructor index)
-├── README.md                          # setup & run instructions
-├── docs/
-│   ├── PROPOSAL.md                    # course proposal summary
-│   ├── IMPLEMENTATION.md              # code ↔ proposal mapping
-│   └── VERIFICATION.md                # test log (modify + baseline smoke)
-├── study/                             # evaluation protocol & instruments
-│   ├── evaluation_protocol.md
-│   ├── scenarios.md
-│   └── questionnaire.md
-└── rebert/
-    ├── _prototype_7_1_/               # modified Rebert p7.1 + explanations
-    │   ├── recommender_7.1.py
-    │   └── web/
-    │       ├── explanations.py        # parse/format structured explanations
-    │       ├── prompts.py
-    │       ├── llm.py
-    │       ├── serve_ephem_rec.py
-    │       └── templates/mainpage.html
-    ├── classes/                       # shared Rebert library
-    └── tools/register_rec_server_key.py
+├── README.md                          ← you are here
+├── requirements.txt
+├── rebert/                            ← all runnable Rebert code
+│   ├── run.sh                         ← launch any prototype (2.0–7.1)
+│   ├── README.md                      ← prototype list & run commands
+│   ├── classes/                       ← shared library (OpenAI, reviews, TMDB, …)
+│   ├── tools/                         ← KeyManager setup
+│   ├── _prototype_2_/ … _prototype_7_1_/   ← each version is self-contained
+│   └── _prototype_7_1_/               ← course base app (p7.1)
+├── projects/
+│   └── grounded-explanations/         ← course docs + study only (one sub-folder)
+│       ├── README.md
+│       ├── FOR_REVIEW.md              ← instructor index
+│       ├── docs/                      ← proposal, implementation, verification
+│       ├── study/                     ← eval protocol, questionnaire, scenarios
+│       └── scripts/                   ← baseline/modified launchers
+└── .venv/                             ← local only (not in git)
 ```
 
-## Prerequisites
+**Important:** Explanation features are implemented **inside** `rebert/_prototype_7_1_/web/`.  
+`projects/grounded-explanations/` holds documentation and study materials — not a separate app.
 
-1. **Python 3.9+**
-2. **API keys** registered with Rebert's `KeyManager`:
-   - OpenAI (`api.openai.com`)
-   - TMDB (`api.themoviedb.org`)
-   - Flask session secret (`recs.rebert.net`)
+## Setup (once)
 
 ```bash
-cd /path/to/HCDE563
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-
-# Register Flask secret (once)
-PYTHONPATH=. python3 rebert/tools/register_rec_server_key.py 'your-long-random-secret'
-```
-
-Add OpenAI and TMDB keys using the same KeyManager workflow your course materials describe.
-
-## Run the server
-
-From the repo root:
-
-```bash
-source .venv/bin/activate
 export PYTHONPATH=.
-cd rebert/_prototype_7_1_
+
+# Flask session secret (once)
+python rebert/tools/register_rec_server_key.py 'your-long-random-secret'
 ```
 
-### Modified condition (default)
+Register OpenAI and TMDB keys via `KeyManager` per course instructions.
 
-Structured explanations enabled:
+## Run Rebert (any prototype)
 
 ```bash
-export REBERT_EXPLANATION_MODE=modified
-python recommender_7.1.py -port 5001
+./rebert/run.sh 5.0              # prototype 5.0, port 5000
+./rebert/run.sh 7.1 5000         # prototype 7.1 (course base)
+./rebert/run.sh 7.0 5002         # another version, custom port
 ```
 
-Or use the helper script from repo root:
+See [`rebert/README.md`](rebert/README.md) for the full prototype table.
+
+## Course sub-project: grounded explanations
+
+Docs and study live in [`projects/grounded-explanations/`](projects/grounded-explanations/).
 
 ```bash
-./scripts/run_modified.sh
+# Baseline vs modified (counterbalanced study)
+./projects/grounded-explanations/scripts/run_baseline.sh   # :5000
+./projects/grounded-explanations/scripts/run_modified.sh   # :5001
+
+# Automated checks (no OpenAI)
+PYTHONPATH=. python projects/grounded-explanations/scripts/verify_project.py
 ```
 
-Open http://127.0.0.1:5001
+Instructors: start at [`projects/grounded-explanations/FOR_REVIEW.md`](projects/grounded-explanations/FOR_REVIEW.md).
 
-### Baseline condition
+## GitHub
 
-Original p7.1 recommendation presentation (no Why panel):
+https://github.com/AnsirU/hcde563-rebert-explanations
 
-```bash
-export REBERT_EXPLANATION_MODE=baseline
-python recommender_7.1.py -port 5000
-```
+## Attribution
 
-Or:
-
-```bash
-./scripts/run_baseline.sh
-```
-
-Open http://127.0.0.1:5000
-
-### Level 3 (optional)
-
-Review excerpt IDs in the LLM prompt:
-
-```bash
-export REBERT_EXPLANATION_MODE=modified_full
-python recommender_7.1.py -port 5001
-```
-
-## Study workflow
-
-1. Counterbalance order: half of participants **Baseline → Modified**, half **Modified → Baseline**.
-2. Use **different scenarios** per condition (see `study/scenarios.md`).
-3. After each condition, administer the post-task survey (`study/questionnaire.md`).
-4. End with comparative questions and a short debrief.
-
-Full procedure: `study/evaluation_protocol.md`
-
-## Evaluation success criteria (from proposal)
-
-- ≥3/5 participants improve on **Transparency**
-- ≥3/5 participants improve on **Trust**
-- Modified chosen more often on the “more honest about AI limits” question
-- No strong negative pattern on cognitive load
-
-## Development notes
-
-- First launch may take several minutes while movie/review data is collected; subsequent same-day launches reuse cached data in `web/tmp/`.
-- The study banner at the top of the page shows which condition is active.
-- Explanation parsing lives in `web/explanations.py` for easy unit testing without calling the LLM.
-
-## License / attribution
-
-Built on Rebert prototypes by David W. McDonald (University of Washington). Course modifications by Zhian Hu for HCDE 563.
+Rebert prototypes: David W. McDonald (University of Washington).  
+Grounded explanations & study design: Zhian Hu (HCDE 563).

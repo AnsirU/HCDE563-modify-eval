@@ -1,7 +1,7 @@
 # Verification Log
 
 **Date:** 2026-05-30  
-**Command:** `PYTHONPATH=. python scripts/verify_project.py`
+**Command:** `PYTHONPATH=. python projects/grounded-explanations/scripts/verify_project.py`
 
 ## Automated checks (modify + config modes)
 
@@ -35,13 +35,16 @@ Homepage HTTP 200 for both conditions.
 
 ```bash
 # Automated
-PYTHONPATH=. python scripts/verify_project.py
+PYTHONPATH=. python projects/grounded-explanations/scripts/verify_project.py
 
 # Modified UI
-./scripts/run_modified.sh
+./projects/grounded-explanations/scripts/run_modified.sh
 
 # Baseline UI
-./scripts/run_baseline.sh
+./projects/grounded-explanations/scripts/run_baseline.sh
+
+# Any Rebert prototype
+./rebert/run.sh 7.1
 ```
 
 First launch on a new day may take several minutes while Rebert collects movie/review data unless a same-day cache exists in `rebert/_prototype_7_1_/web/tmp/`.
