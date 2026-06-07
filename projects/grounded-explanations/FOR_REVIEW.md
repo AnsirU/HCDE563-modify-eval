@@ -12,7 +12,9 @@
 | [`study/scenarios.md`](study/scenarios.md) | Task scenarios |
 | [`study/results/TEMPLATE_participant_scores.md`](study/results/TEMPLATE_participant_scores.md) | Scoresheet template |
 | [`study/results/example_structured_explanation.json`](study/results/example_structured_explanation.json) | Sample explanation output |
+| [`study/DATA_PRIVACY.md`](study/DATA_PRIVACY.md) | Why participant data is not in GitHub |
 | [`docs/DELIVERY_CHECKLIST.md`](docs/DELIVERY_CHECKLIST.md) | Setup steps + completeness checklist |
+| [`docs/FINAL_REPORT_OUTLINE.md`](docs/FINAL_REPORT_OUTLINE.md) | Final report structure + illustrative aggregated results |
 
 ## Run
 
