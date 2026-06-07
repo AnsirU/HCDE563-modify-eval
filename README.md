@@ -73,7 +73,7 @@ Instructors: start at [`projects/grounded-explanations/FOR_REVIEW.md`](projects/
 
 https://github.com/AnsirU/HCDE563-modify-eval
 
-**Note:** Participant-level study data are **not** in the public repository (privacy). See [`projects/grounded-explanations/study/DATA_PRIVACY.md`](projects/grounded-explanations/study/DATA_PRIVACY.md). Aggregated evaluation results appear in the course final report.
+**Note:** Participant-level study data and the **course final report** are **not** in the public repository (privacy). See [`projects/grounded-explanations/study/DATA_PRIVACY.md`](projects/grounded-explanations/study/DATA_PRIVACY.md).
 
 ## Attribution
 

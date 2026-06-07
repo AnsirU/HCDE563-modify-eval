@@ -14,7 +14,8 @@
 | [`study/results/example_structured_explanation.json`](study/results/example_structured_explanation.json) | Sample explanation output |
 | [`study/DATA_PRIVACY.md`](study/DATA_PRIVACY.md) | Why participant data is not in GitHub |
 | [`docs/DELIVERY_CHECKLIST.md`](docs/DELIVERY_CHECKLIST.md) | Setup steps + completeness checklist |
-| [`docs/FINAL_REPORT_OUTLINE.md`](docs/FINAL_REPORT_OUTLINE.md) | Final report structure + illustrative aggregated results |
+
+**Note:** The course **final report** is submitted separately and is not stored in this repository.
 
 ## Run
 

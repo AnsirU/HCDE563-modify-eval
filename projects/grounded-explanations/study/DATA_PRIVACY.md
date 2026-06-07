@@ -18,9 +18,10 @@ This project followed a small within-subjects study (N=5) with classmates and fr
 
 - Runnable prototype code (`rebert/_prototype_7_1_/`)
 - Study protocol, questionnaire, and scenario materials
-- Aggregated / illustrative results in the **final report** (submitted separately to the course)
 - Technical verification logs (`docs/VERIFICATION.md`) — no human-subjects scores
 - A **synthetic example** of structured explanation output (`study/results/example_structured_explanation.json`) for UI demonstration only
+
+The **course final report** (including aggregated evaluation results and analysis) is submitted **outside** this repository.
 
 ## For instructors
 
