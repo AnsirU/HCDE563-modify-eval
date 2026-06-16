@@ -4,6 +4,12 @@ Full **Rebert** prototype codebase (runnable) plus the HCDE 563 course sub-proje
 
 **Author:** Zhian Hu · **Course:** HCDE 563
 
+## GenAI Usage
+
+I used **Cursor / generative AI assistance** while building this Modify & Evaluate project repository. GenAI helped with: locating and editing files in Rebert p7.1 (`explanations.py`, `prompts.py`, `llm.py`, `mainpage.html`, and related server code); drafting repository documentation (README, study protocol files, privacy notice, and instructor review index); writing and organizing run/verify shell scripts; and structuring the course final report (submitted separately to Canvas, not stored in this repo).
+
+I reviewed, tested, and edited all assisted code and text. I ran `projects/grounded-explanations/scripts/verify_project.py`, smoke-tested baseline vs modified conditions locally, and confirmed behavior before submission. Study facilitation, participant sessions, and offline study records were conducted by me without uploading raw participant data to this repository.
+
 ## Repository structure
 
 ```

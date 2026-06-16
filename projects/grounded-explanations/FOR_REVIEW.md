@@ -2,6 +2,8 @@
 
 **Repo layout:** Full Rebert code is in [`rebert/`](../../rebert/). This folder is the HCDE 563 **course sub-project** (docs + study).
 
+**GenAI statement:** See the [**GenAI Usage** section in the root `README.md`](../../README.md#genai-usage).
+
 | Document | Purpose |
 |----------|---------|
 | [`docs/PROPOSAL.md`](docs/PROPOSAL.md) | Problem, modifications, evaluation plan |
